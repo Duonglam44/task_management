@@ -1,0 +1,107 @@
+
+
+.page {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #e1f1e8;
+  flex-direction: column;
+  padding-top: 3rem;
+  gap: 1.5rem;
+  &_title {
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #000;
+  }
+}
+.todo {
+  &_wrapper {
+    width: 100%;
+    max-width: 700px;
+    max-height: 90%;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0 0 8px 8px rgb(153 153 153 / 15%);
+    border-radius: 1rem;
+    .MuiButtonBase-root {
+      min-width: unset;
+    }
+  }
+  &_tasks {
+    height: 100%;
+    min-height: 200px;
+    max-height: 450px;
+    overflow-y: scroll;
+  }
+  &_tasks_status {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    font-size: 14px;
+    & .Open {
+      color: #44becf;
+    }
+    & .Pending {
+      color: #f7b000;
+    }
+    & .Completed {
+      color: #44cf44;
+    }
+  }
+  &_header {
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &_item {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 0.5rem;
+    padding: 0.75rem 0.5rem;
+    border-radius: 0.75rem;
+    &.Completed {
+      background-color: #44cf442e;
+    }
+    &.Open {
+      background-color: #44becf2e;
+    }
+    &.Pending {
+      background-color: #f7b00024;
+    }
+    &_content {
+      flex: 1;
+      max-width: 400px;
+      word-break: break-all;
+      .task_title {
+        line-height: 1.5;
+        font-size: 18px;
+        margin: 0.25rem 0;
+        color: #000;
+      }
+      .task_desc {
+        color: #5c5c5d;
+      }
+    }
+  }
+  &_actions {
+    display: flex;
+    gap: 0.5rem;
+    &_status {
+      width: 125px;
+    }
+  }
+  &_modal {
+    .MuiDialog-paper {
+      width: 100vw;
+      max-width: 500px;
+    }
+  }
+}
