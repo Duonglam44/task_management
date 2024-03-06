@@ -8,20 +8,16 @@
     - Validation & Form: React-hook-form, yup.
     - State managements: Redux.
 
-## Step to run the APP.
-
-### Conditions:
+## Conditions:
 
 - NodeJS version 16.x
 
-**Install the package**
+## Step to run the APP.
 
+**Install the package**
 - npm install --legacy-peer-deps
 
 **Build the APP**
-
 - npm run build.
-
 **Run the APP**
-
 - npm run start.
