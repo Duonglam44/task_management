@@ -15,9 +15,13 @@
 ## Step to run the APP.
 
 **Install the package**
+
 - npm install --legacy-peer-deps
 
 **Build the APP**
+
 - npm run build.
+
 **Run the APP**
+
 - npm run start.
