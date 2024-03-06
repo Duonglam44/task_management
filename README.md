@@ -20,8 +20,8 @@
 
 **Build the APP**
 
-- npm run build.
+- npm run build
 
 **Run the APP**
 
-- npm run start.
+- npm run start
